@@ -8,7 +8,6 @@ license = { text = "MIT" }
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
-app = ["streamlit>=1.30"]
 
 [project.scripts]
 tqk = "tqk.cli:main"

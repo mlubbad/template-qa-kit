@@ -31,6 +31,6 @@ Expected on the demo set: 6 files, 2 accepted (one clean, one with warnings only
 - Rules are plain functions over DataFrames: adding a rule means one function and one test.
 - Thresholds (`AGE_BANDS`, `JUMP_THRESHOLD`, `TOL`) are module constants so a survey cycle can override them.
 - Every run writes `run_summary.json` and a `run_log` table, so a consolidation can be reproduced and audited.
-- Translation of template labels and a Streamlit front end are natural next steps and are intentionally out of scope here.
+- Translation of template labels and a simple web front end are natural next steps and are intentionally out of scope here.
 
 MIT licence.
