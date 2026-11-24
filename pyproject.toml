@@ -1,0 +1,24 @@
+[project]
+name = "template-qa-kit"
+version = "0.1.0"
+description = "Validate, recompute and consolidate many Excel data-collection templates into one audited database (synthetic demo, SDG 4-style)."
+requires-python = ">=3.10"
+dependencies = ["openpyxl>=3.1", "pandas>=2.0"]
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+app = ["streamlit>=1.30"]
+
+[project.scripts]
+tqk = "tqk.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["tqk"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
